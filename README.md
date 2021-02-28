@@ -6,7 +6,7 @@ Under the hood it creates a pool of Ganache-Core servers.
 - A server cannot be up for more that 1 minute.
 - A server that hasn't been used for more than 5 seconds is removed.
 
-All hard limits are configurable, currnetly by modifying a const config object in the code.
+All hard limits are configurable, currently by modifying a const config object in the code.
 
 ## API
 All endpoints take and/or return a JSON encoded body.
