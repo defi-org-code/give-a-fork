@@ -11,19 +11,16 @@ All hard limits are configurable, currently by modifying a const config object i
 ## API
 All endpoints take and/or return a JSON encoded body.
 
-- `POST /create`
-
-  body: `{providerOptions: {...}}` 
+- `POST /create`.   
+  body: `{providerOptions: {...}}`. 
   returns: `{id: "new-instance-id"}`
 
   Creates a new fork instance and returns its ID. 
   
-  `providerOptions` goes straight into Ganache and allows configuring the instance (e.g. setting a list of unlocked accounts). See https://github.com/trufflesuite/ganache-core/tree/master#options.
-  
+  `providerOptions` goes straight into Ganache and allows configuring the instance (e.g. setting a list of unlocked accounts). See https://github.com/trufflesuite/ganache-core/tree/master#options.  
   The endpoint is than available at `/instances/[instance-id]`.
 
-- `POST /destroy`
-
+- `POST /destroy`.   
   body: `{id: "instance-id-to-destroy"}` 
 
   Destroys an active instance. 
