@@ -3,7 +3,7 @@ import Web3 from "web3";
 
 const {lpPositionStatus} = require("./balancer-test");
 
-require("./server");
+require("../server");
 
 async function createInstance(): Promise<number> {
     const createRes = await fetch("http://127.0.0.1:3000/create", {
@@ -102,10 +102,10 @@ async function testBalancer() {
 }
 
 async function test() {
-    // await testOneInstance();
-    // await testTwoInstances();
-    // await testThreeInstances();
-    // await testRepeatedGet();
+    await testOneInstance();
+    await testTwoInstances();
+    await testThreeInstances();
+    await testRepeatedGet();
     await testBalancer();
 }
 
