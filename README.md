@@ -1,4 +1,4 @@
-# Give-A-Fork - a fork endpoint generator service for Ethereum
+# Give-A-Fork - A fork endpoint generator service for Ethereum
 
 Upon request, a temporary Ethereum HTTP endpoint is created which represents a fork of the current Ethereum network. It can than be used by clients to run simulations that contain state-changing transactions.
 Under the hood it creates a pool of Ganache-Core servers.
