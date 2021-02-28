@@ -11,7 +11,8 @@ All hard limits are configurable, currently by modifying a const config object i
 ## API
 All endpoints take and/or return a JSON encoded body.
 
-- POST /create 
+- `POST /create`
+
   body: `{providerOptions: {...}}` 
   returns: `{id: "new-instance-id"}`
 
@@ -21,7 +22,8 @@ All endpoints take and/or return a JSON encoded body.
   
   The endpoint is than available at `/instances/[instance-id]`.
 
-- POST /destroy
+- `POST /destroy`
+
   body: `{id: "instance-id-to-destroy"}` 
 
   Destroys an active instance. 
